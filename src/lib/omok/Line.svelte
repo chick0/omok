@@ -1,4 +1,5 @@
 <script>
+    import { getArrayOfLength } from '$lib'
     import { map } from '$lib/store'
     import Block from './Block.svelte'
 
@@ -6,7 +7,7 @@
 </script>
 
 <div class="line" style="--y: {y}">
-    {#each { length: $map.length } as _, i}
+    {#each getArrayOfLength($map.length) as i}
         <Block x={i} {y} />
     {/each}
 </div>

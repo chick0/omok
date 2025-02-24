@@ -1,5 +1,4 @@
 <script>
-    import { map } from '$lib/store'
     import Stone from './Stone.svelte'
 
     /** @type {Number} */

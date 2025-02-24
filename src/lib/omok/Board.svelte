@@ -1,10 +1,11 @@
 <script>
+    import { getArrayOfLength } from '$lib'
     import { map } from '$lib/store'
     import Line from './Line.svelte'
 </script>
 
 <div class="board" style="--count: {$map.length}">
-    {#each { length: $map.length } as _, i}
+    {#each getArrayOfLength($map.length) as i}
         <Line y={i}></Line>
     {/each}
 </div>
