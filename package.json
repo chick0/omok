@@ -1,6 +1,5 @@
 {
     "name": "omok",
-    "version": "0.0.1",
     "type": "module",
     "scripts": {
         "dev": "vite dev",
@@ -28,5 +27,6 @@
         "prettier-plugin-svelte": "^3.3.3",
         "svelte-check": "^4.1.4",
         "typescript": "^5.7.3"
-    }
+    },
+    "packageManager": "pnpm@10.4.1"
 }
