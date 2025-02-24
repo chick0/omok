@@ -1,4 +1,8 @@
 .svelte-kit
+build/
+
+# Ignore for GitHub Action (due to space indent)
+.github/workflows/*.yml
 
 # Package Managers
 package-lock.json
